@@ -283,7 +283,7 @@ p {
 
 .page-decor {
   position: absolute;
-  z-index: 0;
+  z-index: 12;
   pointer-events: none;
   user-select: none;
 }
@@ -299,13 +299,13 @@ p {
 
 .decor-gallery-pair {
   top: calc(100svh + 560px);
-  left: max(-44px, calc((100vw - 1180px) / 2 - 62px));
-  width: clamp(112px, 14vw, 210px);
+  left: max(-22px, calc((100vw - 1180px) / 2 - 64px));
+  width: clamp(96px, 11vw, 160px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border: 1px solid rgba(184, 153, 255, 0.26);
   border-radius: 8px;
-  opacity: 0.52;
+  opacity: 0.72;
   transform: rotate(-7deg);
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.38);
 }
@@ -540,6 +540,10 @@ p {
     padding: 18px;
   }
 
+  .hero-photo {
+    object-position: 58% center;
+  }
+
   .topbar {
     justify-content: flex-start;
     overflow-x: auto;
@@ -554,11 +558,16 @@ p {
   }
 
   .hero-content {
-    padding-bottom: 36px;
+    max-width: 78%;
+    padding-bottom: 34px;
   }
 
   h1 {
-    font-size: clamp(3.3rem, 18vw, 5.2rem);
+    font-size: clamp(2.9rem, 15vw, 4.6rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 9vw, 3rem);
   }
 
   .intro-band,
@@ -569,52 +578,76 @@ p {
   }
 
   .mavis-float {
-    right: -18px;
-    bottom: 82px;
-    width: clamp(178px, 48vw, 245px);
-    opacity: 0.58;
+    right: -38px;
+    bottom: 118px;
+    width: clamp(150px, 40vw, 205px);
+    opacity: 0.42;
   }
 
   .kuromi-float {
-    right: 10px;
-    bottom: 34px;
-    width: clamp(82px, 22vw, 118px);
-    opacity: 0.82;
+    right: 8px;
+    bottom: 46px;
+    width: clamp(70px, 18vw, 96px);
+    opacity: 0.72;
   }
 
   .pair-float {
     display: block;
-    top: 78px;
-    right: 12px;
-    width: clamp(92px, 28vw, 132px);
-    opacity: 0.46;
-    transform: rotate(-6deg);
+    top: auto;
+    right: 14px;
+    bottom: 238px;
+    width: clamp(74px, 21vw, 105px);
+    opacity: 0.34;
+    transform: rotate(-5deg);
+  }
+
+  .page-decor {
+    position: absolute;
+    z-index: 12;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.55));
   }
 
   .decor-intro-kuromi {
-    top: calc(92svh + 24px);
-    right: -94px;
-    width: 220px;
-    opacity: 0.22;
+    display: block;
+    top: calc(92svh + 26px);
+    right: -26px;
+    bottom: auto;
+    width: 128px;
+    opacity: 0.42;
+    transform: rotate(8deg);
   }
 
   .decor-gallery-pair {
-    display: none;
+    display: block;
+    top: calc(92svh + 580px);
+    left: -18px;
+    width: 82px;
+    opacity: 0.74;
+    transform: rotate(-6deg);
   }
 
   .decor-wish-kuromi {
+    display: block;
     top: calc(92svh + 1140px);
-    right: -12px;
-    width: 88px;
-    opacity: 0.62;
+    right: -4px;
+    width: 76px;
+    opacity: 0.76;
+    transform: rotate(8deg);
   }
 
   .decor-note-pair {
-    display: none;
+    display: block;
+    top: calc(92svh + 1560px);
+    left: -8px;
+    bottom: auto;
+    width: 76px;
+    opacity: 0.66;
+    transform: rotate(7deg);
   }
 
   .carousel-slide img {
-    min-height: 68vw;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
   }
 
   .letter {
