@@ -254,7 +254,7 @@ function App() {
           <p className="section-kicker">what else?</p>
           <h2>very little notes</h2>
           <p>
-            I won’t try to make this sound overly poetic. You’re just cool in your own way. A little moody, a little random, sometimes too aware of the camera, but honestly, I’m glad you’re around.
+            I won't try to make this sound overly poetic. You're just cool in your own way. A little moody, a little random, sometimes too aware of the camera, but honestly, I'm glad you're around.
           </p>
           <button type="button" onClick={() => setIsLetterOpen((value) => !value)}>
             {isLetterOpen ? 'Tutup catatan' : 'Buka bagian terakhir'}
@@ -263,7 +263,7 @@ function App() {
 
         <div className={`letter ${isLetterOpen ? 'open' : ''}`}>
           <p>
-            Happy birthday, Luby. I hope you have a wonderful day filled with love, laughter, and all the things that make you happy. You deserve the best on your special day and always. I’m grateful to have you in my life, and i hope we can still celebrates our birthday in the future. 
+            Happy birthday, Luby. I hope you have a wonderful day filled with love, laughter, and all the things that make you happy. You deserve the best on your special day and always. I'm grateful to have you in my life, and i hope we can still celebrates our birthday in the future.
           </p>
           <strong>{year}</strong>
         </div>

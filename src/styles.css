@@ -259,6 +259,7 @@ p {
 }
 
 .intro-band {
+  z-index: 2;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
   gap: clamp(28px, 7vw, 96px);
@@ -272,9 +273,17 @@ p {
   font-size: 1.05rem;
 }
 
+.intro-band > *,
+.gallery-section > *,
+.wish-band > *,
+.note-section > * {
+  position: relative;
+  z-index: 2;
+}
+
 .page-decor {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
   user-select: none;
 }
@@ -560,19 +569,26 @@ p {
   }
 
   .mavis-float {
-    right: -42px;
-    width: clamp(180px, 42vw, 270px);
-    opacity: 0.72;
+    right: -18px;
+    bottom: 82px;
+    width: clamp(178px, 48vw, 245px);
+    opacity: 0.58;
   }
 
   .kuromi-float {
-    right: 14px;
-    bottom: 96px;
+    right: 10px;
+    bottom: 34px;
     width: clamp(82px, 22vw, 118px);
+    opacity: 0.82;
   }
 
   .pair-float {
-    display: none;
+    display: block;
+    top: 78px;
+    right: 12px;
+    width: clamp(92px, 28vw, 132px);
+    opacity: 0.46;
+    transform: rotate(-6deg);
   }
 
   .decor-intro-kuromi {
